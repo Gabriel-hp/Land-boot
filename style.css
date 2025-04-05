@@ -1,18 +1,21 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(to right, #00c6ff, #0072ff) !important;
     color: #fff;
-    
+    overflow-x: hidden !important;
   }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    
-    background: rgba(0, 0, 0, 0.3);
   }
 
   header h1 {
@@ -140,6 +143,33 @@ body {
     margin-bottom: 75px;
   }
 
+  #video {
+    background-color: #070912;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 100%;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  
+
   section {
     padding: 60px 20px;
     text-align: center;
@@ -179,9 +209,8 @@ body {
   }
 
   #planos{
-    height: 50vh;
+    height: auto;
     align-items: center;
-    height: 50%;
     width: 100%;
   }
 
@@ -192,6 +221,7 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 40px;
+
   }
 
   .plan {
@@ -350,6 +380,9 @@ body {
     #funcionalidades p{
         font-size: 10px;
      }
+     #planos{
+      width: 100%;;
+    }
 
 
   }
@@ -390,6 +423,10 @@ body {
       margin: 0 auto;
     }
 
+    #planos{
+      width: 100%;;
+    }
+
     #funcionalidades{
         background-color: #070912;
         width: 100%;
@@ -403,6 +440,10 @@ body {
 
     #funcionalidades p{
        font-size: 20px;
+    }
+    .video-container {
+      padding-bottom: 100%;
+      max-width: 1800px;
     }
 
     nav a {
