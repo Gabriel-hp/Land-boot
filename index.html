@@ -24,16 +24,7 @@
         </div>
     </section>
 
-    <section id="galeria">
-        <h3>Veja nosso bot em ação</h3>
-        <p class="subtext">Confira algumas interações reais com clientes encantados pelo nosso atendimento automatizado!</p>
-        <div class="gallery">
-          <img src="img/1.png" alt="Exemplo de interação 1">
-          <img src="img/2.png" alt="Exemplo de interação 2">
-          <img src="img/3.png" alt="Exemplo de interação 3">
-          <img src="img/4.png" alt="Exemplo de interação 4">
-        </div>
-      </section>
+  
       
 
     <section id="sobre" >
@@ -45,6 +36,17 @@
         Surpreenda, fidelize e transforme cada conversa em uma oportunidade de vendas.
       </p>
     </div>
+    </section>
+
+    <section id="galeria">
+      <h3>Veja nosso bot em ação</h3>
+      <p class="subtext">Confira algumas interações reais com clientes encantados pelo nosso atendimento automatizado!</p>
+      <div class="gallery">
+        <img src="img/1.png" alt="Exemplo de interação 1">
+        <img src="img/2.png" alt="Exemplo de interação 2">
+        <img src="img/3.png" alt="Exemplo de interação 3">
+        <img src="img/4.png" alt="Exemplo de interação 4">
+      </div>
     </section>
 
     <section id="funcionalidades">
@@ -63,17 +65,59 @@
           <p>Configure em poucos minutos e comece a encantar seus clientes hoje mesmo!</p>
         </div>
       </div>
-      
     </section>
+
+    <section class="social-proof">
+      <div class="container">
+        <h3>Já ajudamos mais de</h3>
+        <p class="number">+ 3.500 clientes</p>
+        <p>Empresas e negócios de todos os tamanhos estão automatizando seus atendimentos com nossa solução de IA no WhatsApp!</p>
+      </div>
+    </section>
+    
 
     <section id="video">
       <div class="video-container">
-        <video controls autoplay muted playsinline>
+        <video autoplay muted playsinline loop>
           <source src="video/video.mp4" type="video/mp4">
           Seu navegador não suporta vídeos.
         </video>
       </div>
+    </section>    
+
+    <section class="como-funciona">
+      <h3>Como Funciona</h3>
+      <p class="subtext">Em poucos passos, sua assistente virtual estará ativa e atendendo seus clientes!</p>
+    
+      <div class="steps">
+    
+        <div class="card">
+          <div class="emoji">📝</div>
+          <h4>1. Escolha seu plano</h4>
+          <p>Selecione o plano que melhor atende suas necessidades. Mensal ou anual, você decide!</p>
+        </div>
+    
+        <div class="card">
+          <div class="emoji">🔑</div>
+          <h4>2. Receba as credenciais</h4>
+          <p>Após a confirmação, enviamos as credenciais para integrar seu WhatsApp à nossa plataforma.</p>
+        </div>
+    
+        <div class="card">
+          <div class="emoji">⚙️</div>
+          <h4>3. Configure seu prompt</h4>
+          <p>Com nosso suporte, você configura o prompt para personalizar as respostas do seu assistente virtual.</p>
+        </div>
+    
+        <div class="card">
+          <div class="emoji">🚀</div>
+          <h4>4. Pronto para vender!</h4>
+          <p>No mesmo dia, sua assistente estará ativa e pronta para atender seus clientes 24h!</p>
+        </div>
+    
+      </div>
     </section>
+    
     
 
     <section id="planos">
@@ -84,7 +128,7 @@
             <p>✅ Respostas automáticas 24/7</p>
             <p>🛠️ Suporte técnico</p>
             <p>🤖  IA avançada e atendimento humanizado</p>
-            <strong>R$ 49,99/mês</strong>
+            <strong>R$ 89,99/mês</strong>
             <a href="#contato">Quero este plano</a>
           </div>
           <div class="plan">
@@ -109,5 +153,21 @@
     <footer>
       <p>&copy; 2025 Bot IA WhatsApp - Todos os direitos reservados.</p>
     </footer>
+      <!-- Botão flutuante do WhatsApp -->
+  <a class="whatsapp-float" href="https://wa.me/seunumero" target="_blank" title="Fale conosco no WhatsApp">
+    💬
+  </a>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
   </body>
 </html>

@@ -208,6 +208,89 @@ body {
     font-size: 20px;
   }
 
+  .social-proof {
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .social-proof .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .social-proof h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .social-proof .number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #026828; /* verde destaque */
+    margin-bottom: 10px;
+  }
+  
+  .social-proof p {
+    font-size: 16px;
+    color: #000000;
+  }
+
+  .como-funciona {
+    background-color: #f8fafc;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .como-funciona h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .como-funciona .subtext {
+    color: #64748b;
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+  
+  .como-funciona .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .como-funciona .card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+  }
+  
+  .como-funciona .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .como-funciona .emoji {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .como-funciona h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .como-funciona p {
+    font-size: 14px;
+    color: #475569;
+  }
+  
+  
+
   #planos{
     height: auto;
     align-items: center;
@@ -260,7 +343,7 @@ body {
   }
 
   #contato{
-    height: 20vh;
+    height: auto;
     background-color: #070912;
     color: #ebebeb;
   }
@@ -280,6 +363,39 @@ body {
     padding: 20px;
     text-align: center;
     color: #000000;
+  }
+
+/* Botão flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe57;
+}
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+  }
+
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   /* Responsividade */
@@ -393,6 +509,7 @@ body {
       background-image: none;
       height: auto;
     }
+    
   
     .text {
       width: 70%;
